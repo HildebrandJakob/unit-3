@@ -100,7 +100,7 @@ const title = container.append("text")
         .attr("text-anchor", "middle")
         .attr("x", 450)
         .attr("y", 30)
-        .text("City Populations")
+        .text("Population of 4 Wisconsin Cities")
 
 const labels = container.selectAll(".labels")
         .data(cityPop)
@@ -132,3 +132,5 @@ const popLine = labels.append("tspan")
           .text(function(d){
               return "Pop. " + popFormat(d.population);
           })
+console.log (cityPop)
+console.log(axis)
