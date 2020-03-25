@@ -1,4 +1,6 @@
 // Lab assignemnt 2
+//Activity 8
+// Jacob Hildebrand
 const width = 900, height = 500
 
 const x = d3.scaleLinear()
