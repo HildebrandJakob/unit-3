@@ -1,14 +1,11 @@
 //jacob Hildebrand
-//First line of main.js...wrap everything in a self-executing anonymous function to move to local scope
 (function(){
 
-//pseudo-global variables
+//csv variables
 var attrArray = ["2010", "2011", "2012", "2013", "2014"]; //list of attributes
 
 var expressed = attrArray[0]; //initial attribute
-    //console.log(expressed);
-
-//chart frame dimensions
+//chart
 var chartWidth = window.innerWidth * 0.425,
     chartHeight = 460,
     leftPadding = 25,
@@ -176,7 +173,7 @@ function setEnumerationUnits(countries, map, path, colorScale){
         .on("mousemove", moveLabel);
 
     var desc = world.append("desc")
-        .text('{"stroke": "#000", "stroke-width": "0.5px"}');
+        .text('{"stroke": "green", "stroke-width": "0.5px"}');
     //console.log(world);
 };
 
@@ -184,11 +181,11 @@ function setEnumerationUnits(countries, map, path, colorScale){
 function makeColorScale(data){
     var colorClasses = [
         //"#f2d0e0",
-        "#feebe2",
-        "#fbb4b9",
+        "ffffdf",
+        "fffbf",
         //"#e373a8",
-        "#DD1C77",
-        "#980043",
+        "#ffff52",
+        "#cbcf00",
     ];
 
     //create color scale generator
@@ -405,7 +402,6 @@ function updateChart(bars, n, colorScale){
     var chartTitle = d3.select(".chartTitle")
         .text("Metric tons of corns produced" + expressed +"");
 
-    // Bob Cowlings' fix to adjust the yAxis
     var yAxis = d3.axisLeft()
         .scale(yScale)
         //Format the charts axis labels

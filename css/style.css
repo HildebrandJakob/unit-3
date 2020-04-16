@@ -5,7 +5,7 @@
     font-weight: bold;
 }
 .chartBackground {
-    fill: rgba(128,128,128,.2);
+    fill: green(128,128,128,.2);
 }
 .chartFrame {
     fill: none;
@@ -15,7 +15,7 @@
 }
 .axis path,
 .axis line {
-    fill: none;
+    fill: green;
     stroke: #999;
     stroke-width: 1px;
     shape-rendering: crispEdges;
@@ -34,10 +34,10 @@
     z-index: 10;
     font-family: AppleGothic, sans-serif;
     font-size: 1em;
-    font-weight: bold;
+    font-weight: bold;xs
     padding: 2px;
-    border: 1px solid #999;
-    box-shadow: 2px 2px 4px #999;
+    border: 1px solid green;
+    box-shadow: 2px 2px 4px green;
 }
 
 option {
@@ -48,7 +48,7 @@ option {
     height: 50px;
     min-width: 100px;
     color: #fff;
-    background-color: #999;
+    background-color: green;
     border: solid thin #fff;
     padding: 5px 10px;
 }
