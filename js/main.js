@@ -2,7 +2,7 @@
 (function(){
 
 //csv variables
-var attrArray = ["2010", "2011", "2012", "2013", "2014"]; //list of attributes
+var attrArray = ["2010", "2011", "2012", "2013", "2014","2015"]; //list of attributes
 
 var expressed = attrArray[0]; //initial attribute
 //chart
@@ -50,7 +50,6 @@ function setMap(){
      var path = d3.geoPath()
         .projection(projection);
 
-    //use queue to parallelize asynchronous data loading
     d3.queue()
         .defer(d3.csv, "./data/corndata.csv") //load attributes from csv
         .defer(d3.json, "./data/world_110m.topojson") //load choropleth spatial data
@@ -65,7 +64,6 @@ function setMap(){
         //translate TopoJSON
         var countries = topojson.feature(world, world.objects.world_110m).features;
 
-        //should this be var world??
         // Add world geojson to map
         var world = map.append("path")
             .datum(countries)
@@ -84,8 +82,6 @@ function setMap(){
         //add coordinated visualization to the map
         setChart(csvData, colorScale);
 
-        //added this to finally get the dropdown to show up!
-        //need to figure out how to get the attributes in it
         createDropdown(csvData); //create the dropdown menu
 
         //examine the results
@@ -159,8 +155,6 @@ function setEnumerationUnits(countries, map, path, colorScale){
         })
         .attr("d", path)
         .style("fill", function(d){
-            //SOMEHOW BOTH OF THESE SEEM TO WORK??
-         //return colorScale(d.properties[expressed]);
          return choropleth(d.properties, colorScale);
         })
        // need to pass the anonymous function to access only the d properties; otherwise, we'd be getting all the data
@@ -199,7 +193,6 @@ function makeColorScale(data){
         domainArray.push(val);
     };
 
-    //cluster data using ckmeans clustering algorithm to create natural breaks
     var clusters = ss.ckmeans(domainArray, 5);
     //console.log(clusters);
     //reset domain array to cluster minimums
@@ -337,29 +330,12 @@ function changeAttribute(attribute, csvData){
             return choropleth(d.properties, ColorScale)
         });
 
-    /*/re-sort, resize, and recolor bars
-    var bars = d3.selectAll(".bars")
-        //re-sort bars
-        .sort(function(a, b){
-            return b[expressed] - a[expressed];
-        })
-        .transition()
-        .delay(function(d, i) {
-            return i * 20;
-        })
-        .duration(500);*/
 
     // changing axis based on the max value for the selected attribute
     var max = d3.max(csvData,function(d){
         return + parseFloat(d[expressed]);
         });
 
-    //reset yScale to new range of data selected by user
-    //var yScale = d3.scaleLinear()
-      //  .range([0, chartHeight])
-        //.range([463, 0])
-        //.domain([0, 50005]);
-        //.domain([0, max]);
 
     //re-sort, resize, and recolor bars
     var bars = d3.selectAll(".bars")
@@ -385,15 +361,11 @@ function updateChart(bars, n, colorScale){
         })
         //size/resize bars
         .attr("height", function(d, i){
-            //return 463 - yScale(parseFloat(d[expressed]));
-            //return 0 - yScale(parseFloat(d[expressed]));
             return 5000 - yScale(parseFloat(d[expressed])) + topBottomPadding;
             //return yScale(parseFloat(d[expressed]));
         })
         .attr("y", function(d, i){
             return yScale(parseFloat(d[expressed])) + topBottomPadding;
-            //return chartHeight - yScale(parseFloat(d[expressed]));
-            //return chartHeight - yScale(parseFloat(d[expressed])) + 15;
         })
         //recolor bars
         .style("fill", function(d){
@@ -454,15 +426,9 @@ function dehighlight(props){
 
 //function to create dynamic label
 function setLabel(props){
-    //label content
-    //var labelAttribute = "<h1>" + props[2] +
-      //  "</h1><b>" + expressed + "</b>";
+
     console.log(props);
-/*
-    props.2013
-    props["2013"]
-    props["Country"]
-    props.Country*/
+
 
     var labelAttribute = "<h1>" + props[expressed] +
         "</h1><b>" + props["Country"] + ", </b>" + "</h1><i>" + expressed + "</i>";
@@ -505,4 +471,4 @@ function moveLabel(){
         .style("left", x + "px")
         .style("top", y + "px");
 };
-})(); //last line of main.js
+})();
