@@ -1,0 +1,205 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 41.532,-90.599 ]
+    },
+    "properties": {
+    "Institution":"Putnam Museum of History and Natural Science"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 41.866963,-87.615392 ]
+    },
+    "properties": {
+    "Institution":"Field Museum of Natural History"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 41.866963,-87.615392 ]
+    },
+    "properties": {
+    "Institution":"Field Museum of Natural History"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 40.155,-85.911 ]
+    },
+    "properties": {
+    "Institution":"Washington County Historical Society"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 40.155,-85.911 ]
+    },
+    "properties": {
+    "Institution":"Washington County Historical Society"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 42.3788,-71.113127 ]
+    },
+    "properties": {
+    "Institution":"Harvard University Peabody Museum of Archaeology and Ethnology"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 42.3788,-71.113127 ]
+    },
+    "properties": {
+    "Institution":"Harvard University Peabody Museum of Archaeology and Ethnology"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 42.3788,-71.113127 ]
+    },
+    "properties": {
+    "Institution":"Harvard University Peabody Museum of Archaeology and Ethnology"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 42.3788,-71.113127 ]
+    },
+    "properties": {
+    "Institution":"Harvard University Peabody Museum of Archaeology and Ethnology"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 42.3788,-71.113127 ]
+    },
+    "properties": {
+    "Institution":"Harvard University Peabody Museum of Archaeology and Ethnology"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 42.3788,-71.113127 ]
+    },
+    "properties": {
+    "Institution":"Harvard University Peabody Museum of Archaeology and Ethnology"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 42.3788,-71.113127 ]
+    },
+    "properties": {
+    "Institution":"Harvard University Peabody Museum of Archaeology and Ethnology"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 42.3788,-71.113127 ]
+    },
+    "properties": {
+    "Institution":"Harvard University Peabody Museum of Archaeology and Ethnology"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 42.3788,-71.113127 ]
+    },
+    "properties": {
+    "Institution":"Harvard University Peabody Museum of Archaeology and Ethnology"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 42.3788,-71.113127 ]
+    },
+    "properties": {
+    "Institution":"Harvard University Peabody Museum of Archaeology and Ethnology"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 42.3788,-71.113127 ]
+    },
+    "properties": {
+    "Institution":"Harvard University Peabody Museum of Archaeology and Ethnology"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 42.3788,-71.113127 ]
+    },
+    "properties": {
+    "Institution":"Harvard University Peabody Museum of Archaeology and Ethnology"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 39.009817,-77.0517 ]
+    },
+    "properties": {
+    "Institution":"U.S. Dept. of Defense Defense National Museum of Health and Medicine"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 39.009817,-85.67422 ]
+    },
+    "properties": {
+    "Institution":"Grand Rapids Public Museum (formerly Public Museum of West Michigan)"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 42.276358,-83.735303 ]
+    },
+    "properties": {
+    "Institution":"Univ. of Michigan Museum of Anthropology"
+    }
+  }
+]
+}
